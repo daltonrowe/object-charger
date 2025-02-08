@@ -6,7 +6,6 @@ difference()
   {
     union()
     {
-      cube(size = [17, 57, 3], center = true);
       translate(v = [46, 0, 0])
       {
         translate(v = [-37.5, -37.5, -3.75])
@@ -89,6 +88,7 @@ difference()
           }
         }
       }
+      cube(size = [19, 57, 3], center = true);
       translate(v = [0, 37.5, 0])
       {
         translate(v = [46, 0, 0])

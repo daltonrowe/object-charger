@@ -15,9 +15,9 @@ export default function () {
   return difference(
     cube([baseWidth, baseDepth, baseHeight]),
     union(
-      bridge(),
       slot().translate_x(slotWidth / 2 + bridgeWidth / 2),
       slot().translate_x((slotWidth / 2 + bridgeWidth / 2) * -1),
+      bridge(),
       plug().translate_x(slotWidth / 2 + bridgeWidth / 2).translate_y(slotDepth / 2)
     ).translate_z(baseHeight / 2),
   );
