@@ -6,12 +6,13 @@ export const slotDepth = 75;
 export const slotHeight = 7.5;
 export const slotRadius = 3;
 
-export const bridgeWidth = 17;
+export const bridgeWidth = 15;
 export const bridgeOverlap = 2;
-export const bridgeDepth = 57;
+export const bridgeDepth = 70;
 export const bridgeHeight = 3;
 
-const baseBorder = 10;
+const baseBorder = 5;
+export const baseRadius = 5;
 export const baseWidth = slotWidth * 2 + bridgeWidth + baseBorder;
 export const baseDepth = slotDepth + baseBorder;
 export const baseHeight = slotHeight / 2 + 3;

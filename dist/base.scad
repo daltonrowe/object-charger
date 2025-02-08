@@ -1,12 +1,39 @@
 $fn = 100;
 difference()
 {
-  cube(size = [177, 85, 6.75], center = true);
+  translate(v = [0, 0, -3.375])
+  {
+    linear_extrude(height = 6.75, center = false, convexity = undef, twist = undef, slices = undef, scale = 1, $fn = 20)
+    {
+      translate(v = [-85, -40])
+      {
+        hull()
+        {
+          translate(v = [5, 5])
+          {
+            circle(r = 5);
+          }
+          translate(v = [165, 5])
+          {
+            circle(r = 5);
+          }
+          translate(v = [165, 75])
+          {
+            circle(r = 5);
+          }
+          translate(v = [5, 75])
+          {
+            circle(r = 5);
+          }
+        }
+      }
+    }
+  }
   translate(v = [0, 0, 3.375])
   {
     union()
     {
-      translate(v = [46, 0, 0])
+      translate(v = [45, 0, 0])
       {
         translate(v = [-37.5, -37.5, -3.75])
         {
@@ -47,7 +74,7 @@ difference()
           }
         }
       }
-      translate(v = [-46, 0, 0])
+      translate(v = [-45, 0, 0])
       {
         translate(v = [-37.5, -37.5, -3.75])
         {
@@ -88,12 +115,12 @@ difference()
           }
         }
       }
-      cube(size = [19, 57, 3], center = true);
+      cube(size = [17, 70, 3], center = true);
       translate(v = [0, 37.5, 0])
       {
-        translate(v = [46, 0, 0])
+        translate(v = [45, 0, 0])
         {
-          cube(size = [12, 10.03, 7.5], center = true);
+          cube(size = [12, 5.03, 7.5], center = true);
         }
       }
     }
