@@ -1,5 +1,5 @@
 export const nothing = 0.03; // some small spacing to prevent z-fighting
-export const tolerance = 0.5;
+export const tolerance = 0.25;
 
 export const slotWidth = 75;
 export const slotDepth = 75;
