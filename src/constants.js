@@ -1,5 +1,5 @@
 export const nothing = 0.03; // some small spacing to prevent z-fighting
-export const tolerance = 0.25;
+export const tolerance = 0.2;
 
 export const slotWidth = 75;
 export const slotDepth = 75;
@@ -22,8 +22,8 @@ export const plugDepth = baseBorder + nothing;
 export const plugHeight = slotHeight;
 
 export const magBorder = 5;
-export const magFloor = 2;
-export const magHeight = 4.5;
+export const magFloor = 3;
+export const magHeight = 5;
 export const magDiameter = 55.5 + tolerance;
 export const magOuterDiameter = 55.5 + magBorder;
 export const magPlugWidth = 5;
