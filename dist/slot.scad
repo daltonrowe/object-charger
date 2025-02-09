@@ -7,21 +7,21 @@ translate(v = [0, 0, -3.75])
     {
       hull()
       {
-        translate(v = [7.5, 7.5])
+        translate(v = [12, 12])
         {
-          circle(r = 7.5);
+          circle(r = 12, $fn = 100);
         }
-        translate(v = [67.5, 7.5])
+        translate(v = [63, 12])
         {
-          circle(r = 7.5);
+          circle(r = 12, $fn = 100);
         }
-        translate(v = [67.5, 67.5])
+        translate(v = [63, 63])
         {
-          circle(r = 7.5);
+          circle(r = 12, $fn = 100);
         }
-        translate(v = [7.5, 67.5])
+        translate(v = [12, 63])
         {
-          circle(r = 7.5);
+          circle(r = 12, $fn = 100);
         }
       }
     }

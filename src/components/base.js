@@ -14,7 +14,7 @@ import slot from "./slot.js";
 
 export default function () {
   return difference(
-    rounded_square([baseWidth, baseDepth], baseRadius)
+    rounded_square([baseWidth, baseDepth], baseRadius, { $fn: 100 })
       .linear_extrude(baseHeight)
       .translate_z((baseHeight / 2) * -1),
     union(

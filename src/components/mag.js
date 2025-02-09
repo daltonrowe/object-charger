@@ -2,6 +2,7 @@ import { cube, cylinder, difference } from "scad-js";
 import {
   magBorder,
   magDiameter,
+  magFloor,
   magHeight,
   magOuterDiameter,
   magPlugDepth,
@@ -11,8 +12,8 @@ import {
 
 export default function () {
   return difference(
-    cylinder(magHeight + magBorder, magOuterDiameter / 2).translate_z(
-      (magBorder / 2) * -1,
+    cylinder(magHeight, magOuterDiameter / 2).translate_z(
+      (magFloor / 2) * -1,
     ),
     cylinder(magHeight + nothing, magDiameter / 2),
     cube([magPlugWidth, magPlugDepth, magHeight + nothing]).translate_y(

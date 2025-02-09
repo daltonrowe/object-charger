@@ -9,21 +9,21 @@ difference()
       {
         hull()
         {
-          translate(v = [9.75, 9.75])
+          translate(v = [15, 15])
           {
-            circle(r = 9.75);
+            circle(r = 15, $fn = 100);
           }
-          translate(v = [157.25, 9.75])
+          translate(v = [152, 15])
           {
-            circle(r = 9.75);
+            circle(r = 15, $fn = 100);
           }
-          translate(v = [157.25, 70.25])
+          translate(v = [152, 65])
           {
-            circle(r = 9.75);
+            circle(r = 15, $fn = 100);
           }
-          translate(v = [9.75, 70.25])
+          translate(v = [15, 65])
           {
-            circle(r = 9.75);
+            circle(r = 15, $fn = 100);
           }
         }
       }
@@ -43,21 +43,21 @@ difference()
             {
               hull()
               {
-                translate(v = [7.5, 7.5])
+                translate(v = [12, 12])
                 {
-                  circle(r = 7.5);
+                  circle(r = 12, $fn = 100);
                 }
-                translate(v = [67.5, 7.5])
+                translate(v = [63, 12])
                 {
-                  circle(r = 7.5);
+                  circle(r = 12, $fn = 100);
                 }
-                translate(v = [67.5, 67.5])
+                translate(v = [63, 63])
                 {
-                  circle(r = 7.5);
+                  circle(r = 12, $fn = 100);
                 }
-                translate(v = [7.5, 67.5])
+                translate(v = [12, 63])
                 {
-                  circle(r = 7.5);
+                  circle(r = 12, $fn = 100);
                 }
               }
             }
@@ -74,28 +74,28 @@ difference()
             {
               hull()
               {
-                translate(v = [7.5, 7.5])
+                translate(v = [12, 12])
                 {
-                  circle(r = 7.5);
+                  circle(r = 12, $fn = 100);
                 }
-                translate(v = [67.5, 7.5])
+                translate(v = [63, 12])
                 {
-                  circle(r = 7.5);
+                  circle(r = 12, $fn = 100);
                 }
-                translate(v = [67.5, 67.5])
+                translate(v = [63, 63])
                 {
-                  circle(r = 7.5);
+                  circle(r = 12, $fn = 100);
                 }
-                translate(v = [7.5, 67.5])
+                translate(v = [12, 63])
                 {
-                  circle(r = 7.5);
+                  circle(r = 12, $fn = 100);
                 }
               }
             }
           }
         }
       }
-      cube(size = [17, 70, 3], center = true);
+      cube(size = [22, 70, 3], center = true);
       translate(v = [0, 37.5, 0])
       {
         translate(v = [43.5, 0, 0])
