@@ -3,7 +3,7 @@ import { slotDepth, slotHeight, slotRadius, slotWidth } from "../constants.js";
 
 export default function () {
   return rounded_square([slotWidth, slotDepth], slotRadius, {
-    $fn: 100
+    $fn: 100,
   })
     .linear_extrude(slotHeight)
     .translate_z((slotHeight / 2) * -1);
