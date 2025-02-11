@@ -17,6 +17,9 @@ export const baseWidth = slotWidth * 2 + bridgeWidth + baseBorder;
 export const baseDepth = slotDepth + baseBorder;
 export const baseHeight = slotHeight / 2 + 3;
 
+export const baseExtensionWidth = 40;
+export const baseExtensionDepth = 20;
+
 export const plugWidth = 12;
 export const plugDepth = baseBorder + nothing;
 export const plugHeight = slotHeight;
@@ -30,10 +33,12 @@ export const magOuterDiameter = 55.5 + magBorder;
 export const magPlugWidth = 5;
 export const magPlugDepth = 10;
 
-export const postWidth = 20;
+export const postWidth = 30;
 export const postDepth = 10;
-export const postHeight = 50;
+export const postHeight = 70;
 export const postRadius = 10;
+export const postHoleWidth = 20;
+export const postHoleHeight = 12;
 
 export const postConnectorWidth = 5;
 export const postConnectorDepth = 10;

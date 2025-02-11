@@ -107,50 +107,101 @@ union()
         }
       }
     }
-    translate(v = [0, 42.5, 0])
+  }
+  difference()
+  {
+    translate(v = [0, 50, 0])
     {
-      translate(v = [0, 0, 26.625])
+      union()
+      {
+        translate(v = [0, 0, -3.375])
+        {
+          linear_extrude(height = 6.75, center = false, convexity = undef, twist = undef, slices = undef, scale = 1, $fn = 20)
+          {
+            translate(v = [-20, -10])
+            {
+              hull()
+              {
+                translate(v = [5, 5])
+                {
+                  circle(r = 5);
+                }
+                translate(v = [35, 5])
+                {
+                  circle(r = 5);
+                }
+                translate(v = [35, 15])
+                {
+                  circle(r = 5);
+                }
+                translate(v = [5, 15])
+                {
+                  circle(r = 5);
+                }
+              }
+            }
+          }
+        }
+        translate(v = [0, -5, 0])
+        {
+          cube(size = [40, 10, 6.75], center = true);
+        }
+      }
+    }
+    translate(v = [0, 48.75, 0])
+    {
+      translate(v = [0, 0, 36.625])
       {
         rotate(a = 180, v = [0, 0, 1])
         {
-          union()
+          scale(v = 1.01)
           {
-            translate(v = [0, 0, -30])
+            difference()
             {
               union()
               {
-                linear_extrude(height = 50, center = false, convexity = undef, twist = undef, slices = undef, scale = 1, $fn = 20)
+                translate(v = [0, 0, -40])
                 {
-                  translate(v = [-10, -5])
+                  union()
                   {
-                    hull()
+                    linear_extrude(height = 70, center = false, convexity = undef, twist = undef, slices = undef, scale = 1, $fn = 20)
                     {
-                      translate(v = [0.625, 0.625])
+                      translate(v = [-15, -5])
                       {
-                        circle(r = 0.625);
+                        hull()
+                        {
+                          translate(v = [0.625, 0.625])
+                          {
+                            circle(r = 0.625);
+                          }
+                          translate(v = [29.375, 0.625])
+                          {
+                            circle(r = 0.625);
+                          }
+                          translate(v = [29.375, 9.375])
+                          {
+                            circle(r = 0.625);
+                          }
+                          translate(v = [0.625, 9.375])
+                          {
+                            circle(r = 0.625);
+                          }
+                        }
                       }
-                      translate(v = [19.375, 0.625])
+                    }
+                    translate(v = [0, 1.5, 0])
+                    {
+                      translate(v = [0, 0, 70])
                       {
-                        circle(r = 0.625);
-                      }
-                      translate(v = [19.375, 9.375])
-                      {
-                        circle(r = 0.625);
-                      }
-                      translate(v = [0.625, 9.375])
-                      {
-                        circle(r = 0.625);
+                        cube(size = [5, 13, 10], center = true);
                       }
                     }
                   }
                 }
-                translate(v = [0, 1.5, 0])
-                {
-                  translate(v = [0, 0, 50])
-                  {
-                    cube(size = [5, 13, 10], center = true);
-                  }
-                }
+              }
+              translate(v = [0, 0, -17.5])
+              {
+                cube(size = [20, 12, 10], center = true);
               }
             }
           }
