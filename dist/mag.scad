@@ -13,5 +13,11 @@ difference()
       cube(size = [5, 10, 5.03], center = true);
     }
   }
-  cube(size = [5, 13, 10], center = true);
+  #union()
+  {
+    rotate(a = 90, v = [1, 0, 0])
+    {
+      cube(size = [5, 13, 10], center = true);
+    }
+  }
 }

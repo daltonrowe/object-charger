@@ -17,6 +17,6 @@ export default function () {
     cube([magPlugWidth, magPlugDepth, magHeight + nothing])
       .translate_y(magDiameter / 2)
       .translate_z(magFloor / 2),
-    postConnector(),
+    postConnector().rotate_x(90),
   );
 }
