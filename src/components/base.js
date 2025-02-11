@@ -7,7 +7,6 @@ import {
   baseWidth,
   bridgeWidth,
   postConnectorHeight,
-  postDepth,
   postHeight,
   slotDepth,
   slotWidth,
