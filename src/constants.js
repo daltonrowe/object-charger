@@ -19,6 +19,7 @@ export const baseHeight = slotHeight / 2 + 3;
 
 export const baseExtensionWidth = 40;
 export const baseExtensionDepth = 20;
+export const baseExtensionHeight = baseHeight * 1.8;
 
 export const plugWidth = 12;
 export const plugDepth = baseBorder + nothing;

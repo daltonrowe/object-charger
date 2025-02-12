@@ -31,5 +31,8 @@ export default function () {
 }
 
 export function postNegative() {
-  return rounded_square([postWidth + tolerance, postDepth + tolerance], 50).linear_extrude(postHeight)
+  return rounded_square(
+    [postWidth + tolerance, postDepth + tolerance],
+    50,
+  ).linear_extrude(postHeight);
 }

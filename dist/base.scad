@@ -116,7 +116,7 @@ union()
       {
         translate(v = [0, 0, -3.375])
         {
-          linear_extrude(height = 13.5, center = false, convexity = undef, twist = undef, slices = undef, scale = 1, $fn = 20)
+          linear_extrude(height = 12.15, center = false, convexity = undef, twist = undef, slices = undef, scale = 1, $fn = 20)
           {
             translate(v = [-20, -10])
             {
