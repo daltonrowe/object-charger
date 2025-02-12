@@ -1,27 +1,35 @@
 import { cube, difference, rounded_square, union } from "scad-js";
 import {
   postConnectorHeight,
-  postConnectorOverhang,
   postDepth,
   postHeight,
   postHoleHeight,
   postHoleWidth,
   postWidth,
+  tolerance,
 } from "../constants.js";
 import postConnector from "./postConnector.js";
 
 export default function () {
   return difference(
     union(
-      union(
+      difference(
         rounded_square([postWidth, postDepth], 50).linear_extrude(postHeight),
-        postConnector()
+        cube([60, 60, 20])
+          .rotate_x(250)
           .translate_z(postHeight)
-          .translate_y(postConnectorOverhang / 2),
+          .translate_y(-7),
       ).translate_z(((postHeight + postConnectorHeight) / 2) * -1),
+      postConnector().rotate_x(250).translate_z(24).translate_y(-1.8),
     ),
-    cube([postHoleWidth, postHoleHeight, postDepth]).translate_z(
-      (postHeight / 4) * -1,
-    ),
+    rounded_square([postHoleWidth, postHoleHeight], 20)
+      .linear_extrude(postDepth * 2)
+      .rotate_x(90)
+      .translate_z((postHeight / 4) * -1)
+      .translate_y(postDepth),
   );
+}
+
+export function postNegative() {
+  return rounded_square([postWidth + tolerance, postDepth + tolerance], 50).linear_extrude(postHeight)
 }

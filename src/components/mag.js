@@ -8,7 +8,7 @@ import {
   magPlugWidth,
   nothing,
 } from "../constants.js";
-import postConnector from "./postConnector.js";
+import { postConnectorNegative } from "./postConnector.js";
 
 export default function () {
   return difference(
@@ -17,6 +17,7 @@ export default function () {
     cube([magPlugWidth, magPlugDepth, magHeight + nothing])
       .translate_y(magDiameter / 2)
       .translate_z(magFloor / 2),
-    postConnector().rotate_x(90).scale(1.01),
+    postConnectorNegative()
+      .translate_z(magFloor * -1),
   );
 }

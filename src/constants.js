@@ -35,10 +35,11 @@ export const magPlugDepth = 10;
 
 export const postWidth = 30;
 export const postDepth = 10;
-export const postHeight = 70;
+export const postHeight = 80;
 export const postRadius = 10;
+
 export const postHoleWidth = 20;
-export const postHoleHeight = 12;
+export const postHoleHeight = 10;
 
 export const postConnectorWidth = 5;
 export const postConnectorDepth = 10;

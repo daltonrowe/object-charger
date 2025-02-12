@@ -116,7 +116,7 @@ union()
       {
         translate(v = [0, 0, -3.375])
         {
-          linear_extrude(height = 6.75, center = false, convexity = undef, twist = undef, slices = undef, scale = 1, $fn = 20)
+          linear_extrude(height = 13.5, center = false, convexity = undef, twist = undef, slices = undef, scale = 1, $fn = 20)
           {
             translate(v = [-20, -10])
             {
@@ -148,60 +148,37 @@ union()
         }
       }
     }
-    translate(v = [0, 48.75, 0])
+    translate(v = [0, 50, 0])
     {
-      translate(v = [0, 0, 36.625])
+      translate(v = [0, 0, -20])
       {
         rotate(a = 180, v = [0, 0, 1])
         {
-          scale(v = 1.01)
+          #union()
           {
-            difference()
+            linear_extrude(height = 80, center = false, convexity = undef, twist = undef, slices = undef, scale = 1, $fn = 20)
             {
-              union()
+              translate(v = [-15.1, -5.1])
               {
-                translate(v = [0, 0, -40])
+                hull()
                 {
-                  union()
+                  translate(v = [0.6375, 0.6375])
                   {
-                    linear_extrude(height = 70, center = false, convexity = undef, twist = undef, slices = undef, scale = 1, $fn = 20)
-                    {
-                      translate(v = [-15, -5])
-                      {
-                        hull()
-                        {
-                          translate(v = [0.625, 0.625])
-                          {
-                            circle(r = 0.625);
-                          }
-                          translate(v = [29.375, 0.625])
-                          {
-                            circle(r = 0.625);
-                          }
-                          translate(v = [29.375, 9.375])
-                          {
-                            circle(r = 0.625);
-                          }
-                          translate(v = [0.625, 9.375])
-                          {
-                            circle(r = 0.625);
-                          }
-                        }
-                      }
-                    }
-                    translate(v = [0, 1.5, 0])
-                    {
-                      translate(v = [0, 0, 70])
-                      {
-                        cube(size = [5, 13, 10], center = true);
-                      }
-                    }
+                    circle(r = 0.6375);
+                  }
+                  translate(v = [29.5625, 0.6375])
+                  {
+                    circle(r = 0.6375);
+                  }
+                  translate(v = [29.5625, 9.5625])
+                  {
+                    circle(r = 0.6375);
+                  }
+                  translate(v = [0.6375, 9.5625])
+                  {
+                    circle(r = 0.6375);
                   }
                 }
-              }
-              translate(v = [0, 0, -17.5])
-              {
-                cube(size = [20, 12, 10], center = true);
               }
             }
           }

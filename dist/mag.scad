@@ -13,11 +13,8 @@ difference()
       cube(size = [5, 10, 5.03], center = true);
     }
   }
-  scale(v = 1.01)
+  translate(v = [0, 0, -3])
   {
-    rotate(a = 90, v = [1, 0, 0])
-    {
-      cube(size = [5, 13, 10], center = true);
-    }
+    cube(size = [5.2, 13.2, 10.2], center = true);
   }
 }
