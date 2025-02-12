@@ -45,7 +45,6 @@ export default function () {
     difference(
       baseExtension().translate_y(baseDepth / 2 + baseExtensionDepth / 2),
       postNegative()
-        .debug()
         .rotate_z(180)
         .translate_z(-20)
         .translate_y(baseDepth / 2 + baseExtensionDepth / 2),

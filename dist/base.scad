@@ -154,30 +154,27 @@ union()
       {
         rotate(a = 180, v = [0, 0, 1])
         {
-          #union()
+          linear_extrude(height = 80, center = false, convexity = undef, twist = undef, slices = undef, scale = 1, $fn = 20)
           {
-            linear_extrude(height = 80, center = false, convexity = undef, twist = undef, slices = undef, scale = 1, $fn = 20)
+            translate(v = [-15.1, -5.1])
             {
-              translate(v = [-15.1, -5.1])
+              hull()
               {
-                hull()
+                translate(v = [0.6375, 0.6375])
                 {
-                  translate(v = [0.6375, 0.6375])
-                  {
-                    circle(r = 0.6375);
-                  }
-                  translate(v = [29.5625, 0.6375])
-                  {
-                    circle(r = 0.6375);
-                  }
-                  translate(v = [29.5625, 9.5625])
-                  {
-                    circle(r = 0.6375);
-                  }
-                  translate(v = [0.6375, 9.5625])
-                  {
-                    circle(r = 0.6375);
-                  }
+                  circle(r = 0.6375);
+                }
+                translate(v = [29.5625, 0.6375])
+                {
+                  circle(r = 0.6375);
+                }
+                translate(v = [29.5625, 9.5625])
+                {
+                  circle(r = 0.6375);
+                }
+                translate(v = [0.6375, 9.5625])
+                {
+                  circle(r = 0.6375);
                 }
               }
             }

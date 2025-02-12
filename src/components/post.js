@@ -27,7 +27,7 @@ export default function () {
       .rotate_x(90)
       .translate_z((postHeight / 4) * -1)
       .translate_y(postDepth),
-  );
+  ).translate_z((postHeight / 2) * -1);
 }
 
 export function postNegative() {
